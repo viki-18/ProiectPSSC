@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "PsscProject.Domain/1.0.0": {
+        "runtime": {
+          "PsscProject.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PsscProject.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

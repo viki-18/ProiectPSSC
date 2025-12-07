@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "RPyROV99MLY=",
+  "success": true,
+  "projectFilePath": "D:\\an4_sem1_viki\\PSSC\\src\\API\\PsscProject.Api\\PsscProject.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Viki\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.11\\microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
+    "C:\\Users\\Viki\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

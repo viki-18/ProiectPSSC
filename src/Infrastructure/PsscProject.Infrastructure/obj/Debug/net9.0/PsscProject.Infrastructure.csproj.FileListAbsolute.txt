@@ -1,0 +1,17 @@
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\bin\Debug\net9.0\PsscProject.Infrastructure.deps.json
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\bin\Debug\net9.0\PsscProject.Infrastructure.dll
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\bin\Debug\net9.0\PsscProject.Infrastructure.pdb
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\bin\Debug\net9.0\PsscProject.Application.dll
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\bin\Debug\net9.0\PsscProject.Domain.dll
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\bin\Debug\net9.0\PsscProject.Application.pdb
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\bin\Debug\net9.0\PsscProject.Domain.pdb
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\net9.0\PsscProject.Infrastructure.csproj.AssemblyReference.cache
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\net9.0\PsscProject.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\net9.0\PsscProject.Infrastructure.AssemblyInfoInputs.cache
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\net9.0\PsscProject.Infrastructure.AssemblyInfo.cs
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\net9.0\PsscProject.Infrastructure.csproj.CoreCompileInputs.cache
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\net9.0\PsscProj.215930ED.Up2Date
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\net9.0\PsscProject.Infrastructure.dll
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\net9.0\refint\PsscProject.Infrastructure.dll
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\net9.0\PsscProject.Infrastructure.pdb
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\net9.0\ref\PsscProject.Infrastructure.dll

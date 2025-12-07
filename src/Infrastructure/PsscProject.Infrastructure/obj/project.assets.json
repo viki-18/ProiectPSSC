@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "PsscProject.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "PsscProject.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PsscProject.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PsscProject.Application.dll": {}
+        }
+      },
+      "PsscProject.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/PsscProject.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PsscProject.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PsscProject.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Core/PsscProject.Application/PsscProject.Application.csproj",
+      "msbuildProject": "../../Core/PsscProject.Application/PsscProject.Application.csproj"
+    },
+    "PsscProject.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Core/PsscProject.Domain/PsscProject.Domain.csproj",
+      "msbuildProject": "../../Core/PsscProject.Domain/PsscProject.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "PsscProject.Application >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Viki\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\an4_sem1_viki\\PSSC\\src\\Infrastructure\\PsscProject.Infrastructure\\PsscProject.Infrastructure.csproj",
+      "projectName": "PsscProject.Infrastructure",
+      "projectPath": "D:\\an4_sem1_viki\\PSSC\\src\\Infrastructure\\PsscProject.Infrastructure\\PsscProject.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\Viki\\.nuget\\packages\\",
+      "outputPath": "D:\\an4_sem1_viki\\PSSC\\src\\Infrastructure\\PsscProject.Infrastructure\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Viki\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "D:\\an4_sem1_viki\\PSSC\\src\\Core\\PsscProject.Application\\PsscProject.Application.csproj": {
+              "projectPath": "D:\\an4_sem1_viki\\PSSC\\src\\Core\\PsscProject.Application\\PsscProject.Application.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

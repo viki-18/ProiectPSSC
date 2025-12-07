@@ -1,0 +1,15 @@
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\bin\Debug\net9.0\PsscProject.Application.deps.json
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\bin\Debug\net9.0\PsscProject.Application.dll
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\bin\Debug\net9.0\PsscProject.Application.pdb
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\bin\Debug\net9.0\PsscProject.Domain.dll
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\bin\Debug\net9.0\PsscProject.Domain.pdb
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\PsscProject.Application.csproj.AssemblyReference.cache
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\PsscProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\PsscProject.Application.AssemblyInfoInputs.cache
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\PsscProject.Application.AssemblyInfo.cs
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\PsscProject.Application.csproj.CoreCompileInputs.cache
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\PsscProj.1E64FFC9.Up2Date
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\PsscProject.Application.dll
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\refint\PsscProject.Application.dll
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\PsscProject.Application.pdb
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\ref\PsscProject.Application.dll

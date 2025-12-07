@@ -1,0 +1,11 @@
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\bin\Debug\net9.0\PsscProject.Domain.deps.json
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\bin\Debug\net9.0\PsscProject.Domain.dll
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\bin\Debug\net9.0\PsscProject.Domain.pdb
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.AssemblyInfoInputs.cache
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.AssemblyInfo.cs
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.csproj.CoreCompileInputs.cache
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.dll
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\refint\PsscProject.Domain.dll
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.pdb
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\ref\PsscProject.Domain.dll
