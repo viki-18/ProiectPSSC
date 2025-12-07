@@ -1,0 +1,22 @@
+using PsscProject.Domain.Models.OrderTaking;
+
+namespace PsscProject.Domain.Models.Shipping;
+
+/// <summary>
+/// O linie din expediere (corespunde cu o linie de comandă)
+/// </summary>
+public record ShipmentLine(
+    ProductId ProductId,
+    string ProductName,
+    int Quantity
+)
+{
+    public static ShipmentLine FromOrderLine(OrderLine orderLine)
+    {
+        return new ShipmentLine(
+            orderLine.ProductId,
+            orderLine.ProductName,
+            orderLine.Quantity
+        );
+    }
+}
