@@ -9,3 +9,4 @@ D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.D
 D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\refint\PsscProject.Domain.dll
 D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.pdb
 D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\ref\PsscProject.Domain.dll
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.sourcelink.json

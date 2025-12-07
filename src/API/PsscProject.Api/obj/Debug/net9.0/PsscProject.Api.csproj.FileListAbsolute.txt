@@ -36,3 +36,4 @@ D:\an4_sem1_viki\PSSC\src\API\PsscProject.Api\obj\Debug\net9.0\refint\PsscProjec
 D:\an4_sem1_viki\PSSC\src\API\PsscProject.Api\obj\Debug\net9.0\PsscProject.Api.pdb
 D:\an4_sem1_viki\PSSC\src\API\PsscProject.Api\obj\Debug\net9.0\PsscProject.Api.genruntimeconfig.cache
 D:\an4_sem1_viki\PSSC\src\API\PsscProject.Api\obj\Debug\net9.0\ref\PsscProject.Api.dll
+D:\an4_sem1_viki\PSSC\src\API\PsscProject.Api\obj\Debug\net9.0\PsscProject.Api.sourcelink.json

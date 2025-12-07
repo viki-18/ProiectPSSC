@@ -15,3 +15,4 @@ D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\ne
 D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\net9.0\refint\PsscProject.Infrastructure.dll
 D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\net9.0\PsscProject.Infrastructure.pdb
 D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\net9.0\ref\PsscProject.Infrastructure.dll
+D:\an4_sem1_viki\PSSC\src\Infrastructure\PsscProject.Infrastructure\obj\Debug\net9.0\PsscProject.Infrastructure.sourcelink.json

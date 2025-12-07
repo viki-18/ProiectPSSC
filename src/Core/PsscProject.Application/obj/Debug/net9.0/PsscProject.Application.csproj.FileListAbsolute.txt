@@ -13,3 +13,4 @@ D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\PsscProj
 D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\refint\PsscProject.Application.dll
 D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\PsscProject.Application.pdb
 D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\ref\PsscProject.Application.dll
+D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Application\obj\Debug\net9.0\PsscProject.Application.sourcelink.json
