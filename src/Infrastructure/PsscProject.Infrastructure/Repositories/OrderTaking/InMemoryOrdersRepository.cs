@@ -3,9 +3,6 @@ using PsscProject.Domain.Models.OrderTaking;
 
 namespace PsscProject.Infrastructure.Repositories.OrderTaking;
 
-/// <summary>
-/// Repository in-memory pentru comenzi (temporar, înainte de baza de date)
-/// </summary>
 public class InMemoryOrdersRepository : IOrdersRepository
 {
     private readonly List<Order> _orders = new();

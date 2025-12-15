@@ -4,9 +4,6 @@ using PsscProject.Domain.Models.OrderTaking;
 
 namespace PsscProject.Infrastructure.Repositories.Shipping;
 
-/// <summary>
-/// Repository in-memory pentru expedieri (temporar, înainte de baza de date)
-/// </summary>
 public class InMemoryShipmentsRepository : IShipmentsRepository
 {
     private readonly List<Shipment> _shipments = new();

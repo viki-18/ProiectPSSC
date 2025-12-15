@@ -1,8 +1,5 @@
 namespace PsscProject.Domain.Models.OrderTaking;
 
-/// <summary>
-/// O linie dintr-o comandă (produs + cantitate + preț)
-/// </summary>
 public record OrderLine(
     ProductId ProductId,
     string ProductName,
@@ -10,6 +7,7 @@ public record OrderLine(
     Money Price
 )
 {
+    private OrderLine() : this(default!, default!, default, default!) { }
     public Money Total => Price * Quantity;
 
     public static OrderLine Create(ProductId productId, string productName, int quantity, Money price)

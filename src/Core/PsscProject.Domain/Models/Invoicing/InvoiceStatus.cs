@@ -1,8 +1,5 @@
 namespace PsscProject.Domain.Models.Invoicing;
 
-/// <summary>
-/// Invoice status enumeration
-/// </summary>
 public enum InvoiceStatus
 {
     Draft = 0,

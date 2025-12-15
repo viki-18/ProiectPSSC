@@ -1,8 +1,5 @@
 namespace PsscProject.Domain.Models.Shipping;
 
-/// <summary>
-/// Shipment status enumeration
-/// </summary>
 public enum ShipmentStatus
 {
     Created = 0,

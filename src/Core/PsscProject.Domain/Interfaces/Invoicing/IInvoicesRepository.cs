@@ -3,9 +3,6 @@ using PsscProject.Domain.Models.OrderTaking;
 
 namespace PsscProject.Domain.Interfaces.Invoicing;
 
-/// <summary>
-/// Repository pentru facturi (citire/scriere)
-/// </summary>
 public interface IInvoicesRepository
 {
     Task SaveInvoiceAsync(Invoice invoice);

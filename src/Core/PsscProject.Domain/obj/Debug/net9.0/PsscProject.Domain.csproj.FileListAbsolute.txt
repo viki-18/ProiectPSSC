@@ -10,3 +10,15 @@ D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\refint\PsscPr
 D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.pdb
 D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\ref\PsscProject.Domain.dll
 D:\an4_sem1_viki\PSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.sourcelink.json
+C:\Users\alexa\Poli\PSSC\ProiectPSSC\src\Core\PsscProject.Domain\bin\Debug\net9.0\PsscProject.Domain.deps.json
+C:\Users\alexa\Poli\PSSC\ProiectPSSC\src\Core\PsscProject.Domain\bin\Debug\net9.0\PsscProject.Domain.dll
+C:\Users\alexa\Poli\PSSC\ProiectPSSC\src\Core\PsscProject.Domain\bin\Debug\net9.0\PsscProject.Domain.pdb
+C:\Users\alexa\Poli\PSSC\ProiectPSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\Poli\PSSC\ProiectPSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.AssemblyInfoInputs.cache
+C:\Users\alexa\Poli\PSSC\ProiectPSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.AssemblyInfo.cs
+C:\Users\alexa\Poli\PSSC\ProiectPSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Poli\PSSC\ProiectPSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.sourcelink.json
+C:\Users\alexa\Poli\PSSC\ProiectPSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.dll
+C:\Users\alexa\Poli\PSSC\ProiectPSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\refint\PsscProject.Domain.dll
+C:\Users\alexa\Poli\PSSC\ProiectPSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\PsscProject.Domain.pdb
+C:\Users\alexa\Poli\PSSC\ProiectPSSC\src\Core\PsscProject.Domain\obj\Debug\net9.0\ref\PsscProject.Domain.dll

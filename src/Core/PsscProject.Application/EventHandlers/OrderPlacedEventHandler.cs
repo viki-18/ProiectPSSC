@@ -3,9 +3,6 @@ using PsscProject.Domain.Models.OrderTaking;
 
 namespace PsscProject.Application.EventHandlers;
 
-/// <summary>
-/// Event handler: La primirea evenimentului "OrderPlaced", declanșez CreateInvoiceWorkflow
-/// </summary>
 public class OrderPlacedEventHandler
 {
     private readonly CreateInvoiceWorkflow _createInvoiceWorkflow;
@@ -15,9 +12,6 @@ public class OrderPlacedEventHandler
         _createInvoiceWorkflow = createInvoiceWorkflow;
     }
 
-    /// <summary>
-    /// Obține o metodă care să gestioneze evenimentul OrderPlaced
-    /// </summary>
     public Func<OrderPlacedEvent, Task> GetHandler()
     {
         return async (orderPlacedEvent) =>

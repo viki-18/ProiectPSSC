@@ -4,9 +4,6 @@ using PsscProject.Domain.Models.OrderTaking;
 
 namespace PsscProject.Infrastructure.Repositories.Invoicing;
 
-/// <summary>
-/// Repository in-memory pentru facturi (temporar, înainte de baza de date)
-/// </summary>
 public class InMemoryInvoicesRepository : IInvoicesRepository
 {
     private readonly List<Invoice> _invoices = new();

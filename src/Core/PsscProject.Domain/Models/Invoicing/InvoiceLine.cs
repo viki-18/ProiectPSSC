@@ -2,9 +2,6 @@ using PsscProject.Domain.Models.OrderTaking;
 
 namespace PsscProject.Domain.Models.Invoicing;
 
-/// <summary>
-/// O linie din factură (corespunde cu o linie de comandă)
-/// </summary>
 public record InvoiceLine(
     ProductId ProductId,
     string ProductName,
@@ -12,6 +9,7 @@ public record InvoiceLine(
     Money UnitPrice
 )
 {
+    private InvoiceLine() : this(default!, default!, default, default!) { }
     public Money Total => UnitPrice * Quantity;
 
     public static InvoiceLine FromOrderLine(OrderLine orderLine)
