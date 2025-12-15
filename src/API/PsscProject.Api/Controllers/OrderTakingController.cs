@@ -1,57 +1,51 @@
 using Microsoft.AspNetCore.Mvc;
 using PsscProject.Application.Workflows.OrderTaking;
-using PsscProject.Domain.Models.OrderTaking;
-
-namespace PsscProject.Api.Controllers;
-
-[ApiController]
-[Route("api/[controller]")]
-public class OrderTakingController : ControllerBase
+using PsscProject.Domain.Models.OrderTaking; // Asigură-te că ai acest using
+using PsscProject.Domain.Models; // Pentru a recunoaște clasa 'Result'
+namespace PsscProject.Api.Controllers
 {
-    private readonly PlaceOrderWorkflow _placeOrderWorkflow;
-
-    // Dependency Injection - workflow-ul va fi injectat din container
-    public OrderTakingController(PlaceOrderWorkflow placeOrderWorkflow)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class OrderTakingController : ControllerBase
     {
-        _placeOrderWorkflow = placeOrderWorkflow;
-    }
+        private readonly PlaceOrderWorkflow _placeOrderWorkflow;
+        private readonly CancelOrderWorkflow _cancelOrderWorkflow;
 
-    /// <summary>
-    /// POST /api/ordertaking/place-order
-    /// Preluare comandă - triggers Place Order workflow
-    /// </summary>
-    [HttpPost("place-order")]
-    public async Task<IActionResult> PlaceOrder([FromBody] PlaceOrderCommand command)
-    {
-        try
+        public OrderTakingController(
+            PlaceOrderWorkflow placeOrderWorkflow,
+            CancelOrderWorkflow cancelOrderWorkflow)
+        {
+            _placeOrderWorkflow = placeOrderWorkflow;
+            _cancelOrderWorkflow = cancelOrderWorkflow;
+        }
+
+        [HttpPost("place-order")]
+        public async Task<IActionResult> PlaceOrder([FromBody] PlaceOrderCommand command)
         {
             var result = await _placeOrderWorkflow.ExecuteAsync(command);
 
-            return Ok(new
+            if (result.IsFailure)
             {
-                success = true,
-                orderId = result.OrderId,
-                customerId = result.CustomerId,
-                totalAmount = result.TotalAmount,
-                currency = result.Currency,
-                lineCount = result.LineCount,
-                timestamp = result.Timestamp
-            });
+                return BadRequest(new { error = result.Error });
+            }
+
+            return Ok(result.Value);
         }
-        catch (InvalidOperationException ex)
+
+        [HttpPost("cancel-order")]
+        public async Task<IActionResult> CancelOrder([FromBody] CancelOrderCommand command)
         {
-            return BadRequest(new
+            var result = await _cancelOrderWorkflow.ExecuteAsync(command);
+
+            if (result.IsFailure)
             {
-                success = false,
-                error = ex.Message
-            });
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(500, new
-            {
-                success = false,
-                error = "Internal server error: " + ex.Message
+                return BadRequest(new { error = result.Error });
+            }
+
+            return Ok(new 
+            { 
+                message = "Order cancelled successfully", 
+                orderId = result.Value.OrderId 
             });
         }
     }

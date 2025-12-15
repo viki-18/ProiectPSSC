@@ -21,10 +21,6 @@ public class InvoicingController : ControllerBase
         _invoicesRepository = invoicesRepository;
     }
 
-    /// <summary>
-    /// POST /api/invoicing/create-invoice
-    /// Creare factură pentru o comandă existentă
-    /// </summary>
     [HttpPost("create-invoice")]
     public async Task<IActionResult> CreateInvoice([FromBody] CreateInvoiceRequest request)
     {
@@ -64,10 +60,6 @@ public class InvoicingController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// GET /api/invoicing/{invoiceId}
-    /// Preia detaliile unei facturi
-    /// </summary>
     [HttpGet("{invoiceId}")]
     public async Task<IActionResult> GetInvoice(Guid invoiceId)
     {
