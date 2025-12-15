@@ -21,10 +21,6 @@ public class ShippingController : ControllerBase
         _shipmentsRepository = shipmentsRepository;
     }
 
-    /// <summary>
-    /// POST /api/shipping/create-shipment
-    /// Creare expediere pentru o comandă existentă
-    /// </summary>
     [HttpPost("create-shipment")]
     public async Task<IActionResult> CreateShipment([FromBody] CreateShipmentRequest request)
     {
@@ -62,10 +58,6 @@ public class ShippingController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// GET /api/shipping/{shipmentId}
-    /// Preia detaliile unei expedieri
-    /// </summary>
     [HttpGet("{shipmentId}")]
     public async Task<IActionResult> GetShipment(Guid shipmentId)
     {

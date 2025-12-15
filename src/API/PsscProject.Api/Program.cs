@@ -31,6 +31,7 @@ builder.Services.AddSingleton<IShipmentsRepository, InMemoryShipmentsRepository>
 builder.Services.AddScoped<PlaceOrderWorkflow>();
 builder.Services.AddScoped<CreateInvoiceWorkflow>();
 builder.Services.AddScoped<CreateShipmentWorkflow>();
+builder.Services.AddScoped<CancelOrderWorkflow>(); 
 
 builder.Services.AddScoped<OrderPlacedEventHandler>();
 builder.Services.AddScoped<InvoiceCreatedEventHandler>();
