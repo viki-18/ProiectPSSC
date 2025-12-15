@@ -12,6 +12,7 @@ public record InvoiceLine(
     Money UnitPrice
 )
 {
+    private InvoiceLine() : this(default!, default!, default, default!) { }
     public Money Total => UnitPrice * Quantity;
 
     public static InvoiceLine FromOrderLine(OrderLine orderLine)

@@ -14,6 +14,8 @@ public class Shipment
     public DateTime CreatedAt { get; init; }
     public List<ShipmentLine> Lines { get; init; }
 
+    private Shipment() { }
+    
     private Shipment(
         ShipmentId id,
         OrderId orderId,

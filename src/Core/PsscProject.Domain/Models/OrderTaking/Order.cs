@@ -12,6 +12,8 @@ public class Order
 
     public Money Total => Lines.Aggregate(Money.Zero, (acc, line) => acc + line.Total);
 
+    private Order() { }
+    
     private Order(OrderId id, CustomerId customerId, DateTime createdAt, List<OrderLine> lines)
     {
         Id = id;

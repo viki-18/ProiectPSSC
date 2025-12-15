@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\an4_sem1_viki\\PSSC\\src\\Core\\PsscProject.Domain\\PsscProject.Domain.csproj": {}
+    "C:\\Users\\alexa\\Poli\\PSSC\\ProiectPSSC\\src\\Core\\PsscProject.Domain\\PsscProject.Domain.csproj": {}
   },
   "projects": {
-    "D:\\an4_sem1_viki\\PSSC\\src\\Core\\PsscProject.Domain\\PsscProject.Domain.csproj": {
+    "C:\\Users\\alexa\\Poli\\PSSC\\ProiectPSSC\\src\\Core\\PsscProject.Domain\\PsscProject.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\an4_sem1_viki\\PSSC\\src\\Core\\PsscProject.Domain\\PsscProject.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\alexa\\Poli\\PSSC\\ProiectPSSC\\src\\Core\\PsscProject.Domain\\PsscProject.Domain.csproj",
         "projectName": "PsscProject.Domain",
-        "projectPath": "D:\\an4_sem1_viki\\PSSC\\src\\Core\\PsscProject.Domain\\PsscProject.Domain.csproj",
-        "packagesPath": "C:\\Users\\Viki\\.nuget\\packages\\",
-        "outputPath": "D:\\an4_sem1_viki\\PSSC\\src\\Core\\PsscProject.Domain\\obj\\",
+        "projectPath": "C:\\Users\\alexa\\Poli\\PSSC\\ProiectPSSC\\src\\Core\\PsscProject.Domain\\PsscProject.Domain.csproj",
+        "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexa\\Poli\\PSSC\\ProiectPSSC\\src\\Core\\PsscProject.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Viki\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

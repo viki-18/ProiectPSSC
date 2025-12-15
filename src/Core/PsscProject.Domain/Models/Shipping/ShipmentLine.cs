@@ -11,6 +11,7 @@ public record ShipmentLine(
     int Quantity
 )
 {
+    private ShipmentLine() : this(default!, default!, default) { }
     public static ShipmentLine FromOrderLine(OrderLine orderLine)
     {
         return new ShipmentLine(

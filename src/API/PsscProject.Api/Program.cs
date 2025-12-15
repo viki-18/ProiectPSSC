@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using PsscProject.Application.EventHandlers;
 using PsscProject.Application.Workflows.Invoicing;
 using PsscProject.Application.Workflows.OrderTaking;
@@ -7,6 +8,7 @@ using PsscProject.Domain.Interfaces.OrderTaking;
 using PsscProject.Domain.Interfaces.Shipping;
 using PsscProject.Domain.Models.Invoicing;
 using PsscProject.Domain.Models.OrderTaking;
+using PsscProject.Infrastructure.Persistence;
 using PsscProject.Infrastructure.Repositories.Invoicing;
 using PsscProject.Infrastructure.Repositories.OrderTaking;
 using PsscProject.Infrastructure.Repositories.Shipping;
@@ -14,58 +16,37 @@ using PsscProject.Infrastructure.Services.OrderTaking;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ========== DEPENDENCY INJECTION SETUP ==========
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<PsscDbContext>(options =>
+    options.UseSqlServer(connectionString));
 
-// Order-Taking services
-builder.Services.AddSingleton<IOrdersRepository, InMemoryOrdersRepository>();
+builder.Services.AddScoped<IOrdersRepository, SqlOrdersRepository>();
 builder.Services.AddSingleton<IProductCatalog, InMemoryProductCatalog>();
 builder.Services.AddSingleton<IEventBus, InMemoryEventBus>();
 
-// Invoicing services
 builder.Services.AddSingleton<IInvoicesRepository, InMemoryInvoicesRepository>();
 
-// Shipping services
 builder.Services.AddSingleton<IShipmentsRepository, InMemoryShipmentsRepository>();
 
-// Application workflows
-builder.Services.AddSingleton<PlaceOrderWorkflow>();
-builder.Services.AddSingleton<CreateInvoiceWorkflow>();
-builder.Services.AddSingleton<CreateShipmentWorkflow>();
+builder.Services.AddScoped<PlaceOrderWorkflow>();
+builder.Services.AddScoped<CreateInvoiceWorkflow>();
+builder.Services.AddScoped<CreateShipmentWorkflow>();
 
-// Event handlers
-builder.Services.AddSingleton<OrderPlacedEventHandler>();
-builder.Services.AddSingleton<InvoiceCreatedEventHandler>();
+builder.Services.AddScoped<OrderPlacedEventHandler>();
+builder.Services.AddScoped<InvoiceCreatedEventHandler>();
 
-// Controllers
 builder.Services.AddControllers();
-builder.Services.AddOpenApi();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// ========== SETUP EVENT HANDLERS ==========
-// Înregistrez event handlers la startup
-var eventBus = app.Services.GetRequiredService<IEventBus>();
-var orderPlacedEventHandler = app.Services.GetRequiredService<OrderPlacedEventHandler>();
-var invoiceCreatedEventHandler = app.Services.GetRequiredService<InvoiceCreatedEventHandler>();
-
-if (eventBus is InMemoryEventBus inMemoryEventBus)
-{
-    inMemoryEventBus.Subscribe<OrderPlacedEvent>(orderPlacedEventHandler.GetHandler());
-    Console.WriteLine("[Startup] Registered OrderPlacedEvent handler -> CreateInvoiceWorkflow");
-
-    inMemoryEventBus.Subscribe<InvoiceCreatedEvent>(invoiceCreatedEventHandler.GetHandler());
-    Console.WriteLine("[Startup] Registered InvoiceCreatedEvent handler -> CreateShipmentWorkflow");
-}
-
-// ========== HTTP PIPELINE ==========
-
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
-// app.UseHttpsRedirection(); // Commented out for development with HTTP
 app.MapControllers();
 
 app.Run();
-

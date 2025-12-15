@@ -16,6 +16,8 @@ public class Invoice
 
     public Money Total => Lines.Aggregate(Money.Zero, (acc, line) => acc + line.Total);
 
+    private Invoice() { }
+    
     private Invoice(
         InvoiceId id,
         OrderId orderId,
