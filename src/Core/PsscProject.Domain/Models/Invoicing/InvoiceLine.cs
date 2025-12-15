@@ -2,9 +2,6 @@ using PsscProject.Domain.Models.OrderTaking;
 
 namespace PsscProject.Domain.Models.Invoicing;
 
-/// <summary>
-/// O linie din factură (corespunde cu o linie de comandă)
-/// </summary>
 public record InvoiceLine(
     ProductId ProductId,
     string ProductName,

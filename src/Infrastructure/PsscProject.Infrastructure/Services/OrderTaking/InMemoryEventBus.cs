@@ -3,10 +3,6 @@ using PsscProject.Domain.Models.OrderTaking;
 
 namespace PsscProject.Infrastructure.Services.OrderTaking;
 
-/// <summary>
-/// Event bus in-memory (temporar, înainte de message broker real)
-/// Suportă publicare de evenimente și handlers
-/// </summary>
 public class InMemoryEventBus : IEventBus
 {
     private readonly List<object> _events = new();
@@ -17,7 +13,6 @@ public class InMemoryEventBus : IEventBus
         _events.Add(domainEvent);
         Console.WriteLine($"[EventBus] Published: {domainEvent.GetType().Name}");
 
-        // Execută toți handlerii pentru acest tip de eveniment
         var eventType = domainEvent.GetType();
         if (_handlers.TryGetValue(eventType, out var handlers))
         {
@@ -25,11 +20,10 @@ public class InMemoryEventBus : IEventBus
             {
                 if (handler is Delegate del)
                 {
-                    // Apelează handlerul (poate fi async)
                     var task = del.DynamicInvoke(domainEvent) as Task;
                     if (task != null)
                     {
-                        task.Wait(); // Așteptă ca handlerul să se termine
+                        task.Wait();
                     }
                 }
             }
@@ -38,9 +32,6 @@ public class InMemoryEventBus : IEventBus
         return Task.CompletedTask;
     }
 
-    /// <summary>
-    /// Înregistrează un handler pentru un tip specific de eveniment
-    /// </summary>
     public void Subscribe<TEvent>(Func<TEvent, Task> handler) where TEvent : class
     {
         var eventType = typeof(TEvent);

@@ -3,9 +3,6 @@ using PsscProject.Domain.Models.OrderTaking;
 
 namespace PsscProject.Domain.Interfaces.Shipping;
 
-/// <summary>
-/// Repository pentru expedieri (citire/scriere)
-/// </summary>
 public interface IShipmentsRepository
 {
     Task SaveShipmentAsync(Shipment shipment);

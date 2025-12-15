@@ -2,9 +2,6 @@ using PsscProject.Domain.Models.OrderTaking;
 
 namespace PsscProject.Domain.Models.Shipping;
 
-/// <summary>
-/// Entitate de domeniu: Shipment - o expediere pentru o comandă
-/// </summary>
 public class Shipment
 {
     public ShipmentId Id { get; init; }
@@ -32,9 +29,6 @@ public class Shipment
         Status = status;
     }
 
-    /// <summary>
-    /// Factory method - creează o expediere nouă din datele unei comenzi
-    /// </summary>
     public static Shipment CreateFromOrder(OrderId orderId, CustomerId customerId, List<ShipmentLine> lines)
     {
         if (lines.Count == 0)
@@ -50,15 +44,9 @@ public class Shipment
         );
     }
 
-    /// <summary>
-    /// Marchez expeditia ca fiind în tranzit
-    /// </summary>
     public void MarkAsInTransit()
     {
         if (Status != ShipmentStatus.Packed)
             throw new InvalidOperationException("Can only mark as in-transit when status is Packed");
-        
-        // În domeniu nu pot schimba direct - ar trebui să ridic eveniment
-        // Pentru moment, simplificăm
     }
 }

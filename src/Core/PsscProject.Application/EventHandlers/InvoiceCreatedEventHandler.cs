@@ -4,9 +4,6 @@ using PsscProject.Domain.Models.OrderTaking;
 
 namespace PsscProject.Application.EventHandlers;
 
-/// <summary>
-/// Event handler: La primirea evenimentului "InvoiceCreated", declanșez CreateShipmentWorkflow
-/// </summary>
 public class InvoiceCreatedEventHandler
 {
     private readonly CreateShipmentWorkflow _createShipmentWorkflow;
@@ -16,9 +13,6 @@ public class InvoiceCreatedEventHandler
         _createShipmentWorkflow = createShipmentWorkflow;
     }
 
-    /// <summary>
-    /// Obține o metodă care să gestioneze evenimentul InvoiceCreated
-    /// </summary>
     public Func<InvoiceCreatedEvent, Task> GetHandler()
     {
         return async (invoiceCreatedEvent) =>

@@ -1,8 +1,5 @@
 namespace PsscProject.Domain.Models.OrderTaking;
 
-/// <summary>
-/// Entitate de domeniu: Order - stocheaza o comanda completa
-/// </summary>
 public class Order
 {
     public OrderId Id { get; init; }
@@ -22,9 +19,6 @@ public class Order
         Lines = lines;
     }
 
-    /// <summary>
-    /// Factory method pentru a crea o comanda noua
-    /// </summary>
     public static Order Create(CustomerId customerId, List<OrderLine> lines)
     {
         if (lines.Count == 0)

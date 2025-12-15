@@ -3,14 +3,10 @@ using PsscProject.Domain.Models.OrderTaking;
 
 namespace PsscProject.Infrastructure.Services.OrderTaking;
 
-/// <summary>
-/// Serviciu in-memory pentru catalog de produse (temporar)
-/// </summary>
 public class InMemoryProductCatalog : IProductCatalog
 {
     private readonly List<ProductDetails> _products = new()
     {
-        // Inițializează cu câteva produse exemplu
         new ProductDetails(
             new ProductId(Guid.Parse("11111111-1111-1111-1111-111111111111")),
             "Laptop",

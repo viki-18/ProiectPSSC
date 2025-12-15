@@ -2,9 +2,6 @@ using PsscProject.Domain.Models.OrderTaking;
 
 namespace PsscProject.Domain.Models.Invoicing;
 
-/// <summary>
-/// Entitate de domeniu: Invoice - o factură pentru o comandă
-/// </summary>
 public class Invoice
 {
     public InvoiceId Id { get; init; }
@@ -34,9 +31,6 @@ public class Invoice
         Status = status;
     }
 
-    /// <summary>
-    /// Factory method - creează o factură nouă din datele unei comenzi
-    /// </summary>
     public static Invoice CreateFromOrder(OrderId orderId, CustomerId customerId, List<InvoiceLine> lines)
     {
         if (lines.Count == 0)

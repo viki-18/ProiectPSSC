@@ -1,8 +1,5 @@
 namespace PsscProject.Domain.Models.OrderTaking;
 
-/// <summary>
-/// O linie dintr-o comandă (produs + cantitate + preț)
-/// </summary>
 public record OrderLine(
     ProductId ProductId,
     string ProductName,
